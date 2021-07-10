@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Clima Tempo</title>
+    <link rel="stylesheet" href="css/style-header.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/icone-logo.png" alt="nuvem-icone">
+        </div>
+        <div class='links' id="link">
+            <a href="">HOME</a>
+            <a href="sobre.html">QUEM SOMOS</a>
+            <a  class="id-pesquisa" id='id-pesquisa'>PESQUISAR</a>
+        </div>
+        <div class="linhas" id="linha-tempo">
+            <img src="img/linhas.png" alt="linha">
+        </div>
+    </div>
+    <div class="links-mobile" id="links-mobile">
+        <a href="">HOME</a>
+        <a href="sobre.html">QUEM SOMOS</a>
+        <a  class="id-pesquisa" id='id-pesquisa2'>PESQUISAR</a>
+    </div>
+    <section class='pesquisa' id="pesquisa">
+    <div class="input">
+            <form action="" method="POST" >
+                <p>Cidade:</p>
+                <input type="text" name="cidade" id="" class="cidade" placeholder="Nome da cidade.." required>
+                <p>Estado:</p>
+                <select name="estados" id="estados">
+                    <option value="ac">AC</option>
+                    <option value="al">AL</option>
+                    <option value="ap">AP</option>
+                    <option value="am">AM</option>
+                    <option value="ba">BA</option>
+                    <option value="ce">CE</option>
+                    <option value="es">ES</option>
+                    <option value="go">GO</option>
+                    <option value="ma">MA</option>
+                    <option value="mt">MT</option>
+                    <option value="ms">MS</option>
+                    <option value="mg">MG</option>
+                    <option value="pa">PA</option>
+                    <option value="pb">PB</option>
+                    <option value="pr">PR</option>
+                    <option value="pe">PE</option>
+                    <option value="pi">PI</option>
+                    <option value="rj">RJ</option>
+                    <option value="rn">RN</option>
+                    <option value="rs">RS</option>
+                    <option value="ro">RO</option>
+                    <option value="rr">RR</option>
+                    <option value="sc">SC</option>
+                    <option value="sp">SP</option>
+                    <option value="se">SE</option>
+                    <option value="to">TO</option>
+                    <option value="df">DF</option>
+                </select>
+                <button type="submit" name="pesquisar">PESQUISAR</button>
+            </form>
+        </div>
+    </section>
+    <main class="main">
+        <div class="erro">
+            <div class="alerta error" id="erro">Deu Erro!!&nbsp Por Favor faça novamente</div>
+        </div>
+        <section class='card-tempo'>
+                <div class='sub-card'>
+                    <p>Tempo agora em<br>São Paulo, SP</p>
+                    <div class='icone-tempo'>
+                        <img src="img/noite.png" alt="icone-chuva">
+                        <p>
+                            15°
+                        </p>
+                    </div>
+                    <br>
+                    <div class="tema">
+                        <p>Chuva</p>
+                        <p>Sensacão 15°</P>
+                    </div>
+                </div>
+                <div class='sub-card2'>
+                    <div class="linha"></div>
+                    <div class="vento">
+                        <div class='circulo-green'></div>
+                        <h3>VENTO</h3>
+                        <p>150Km/h</p>
+                    </div>
+                    <div class="linha"></div>
+                    <div class="umidade">
+                        <div class='circulo-red'></div>
+                        <h3>UMIDADE</h3>
+                        <p>80%</p>
+                    </div>
+                    <div class="linha"></div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="conteudo">
+            <div class="informacao">
+                <h1>Clima Tempo</h1>
+                <p>Site para ver o clima em sua cidade.</p>
+            </div>
+            <div class="img">
+                <a href="https://github.com/Daniel2019" target="_blank"><img src="img/github.png" alt="icone-github"></a>
+            </div>
+            <div class="img2">
+                <a href="https://www.linkedin.com/in/daniel-soares-de-oliveira-05a8641b3/" target="_blank"><img src="img/linkedin.png" alt="icone-linkedin"></a>
+            </div>
+        </div>
+        <div class="linha2"></div>
+        <div class="direitos">
+            <img src="img/icone-logo.png" alt="nuvem-icone">
+            <p>Copyright 2021 - Climatempo. Todos os direitos reservados - Site de Clima</p>
+        </div>
+
+        <h3>Window size is <span class="window-size"></span></h3>
+        <p>Knowing this number you can make decisions based in breakpoints of window.</p>
+        <hr3></hr3>
+    </footer>
+    <div class="div"></div>
+    <script src="js/index.js"></script>
+    <script>form.style.display = "flex";</script>
+</body>
+</html>

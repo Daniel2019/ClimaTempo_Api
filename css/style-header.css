@@ -1,0 +1,917 @@
+/* Começo */
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../img/bahnschrift.ttf);
+ }
+
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: Bahnschrift;
+}
+
+/* Cabeçalho */
+.header{
+    width: 100vw;
+    height: 15vh;
+    background-color: #0080CD;
+    display: flex;
+    color: #FFFF;
+    align-items: center;
+}
+
+.links{
+    width: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30vw;
+}
+
+.links a{
+    text-decoration: none;
+    color: #FFFF;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 20px;
+} 
+.links a:hover{
+    color: #d9d9d9;
+    text-decoration: underline;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.logo{
+    display: flex;
+    height: 100%;
+    width: 400px;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 25px;
+    font-family:  Bahnschrift;
+    padding-top: 5px;
+}
+
+.logo img{
+    width: 150px;
+    height: 105px;
+    margin-left: 35px;
+}
+
+.pesquisa{
+    display: none;
+    width: 100vw;
+    height: 6vh;
+    background-color: #C4C4C4;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.testando{
+    background-color: black;
+}
+
+.input form{
+    width: 100vw;
+    height: 6vh;
+    flex-direction: row;
+    display: inline-flex;
+    align-items: center;
+}
+
+.input p{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.input input{
+    height: 25px;
+    width: 750px;
+    background-color: #0080CD;
+    border-radius: 20px;
+    color: #FFFF;
+    border: solid 1px black;
+    padding-left: 10px;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.input input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 14px;
+    font-weight: 510;
+ }
+
+.input select{
+    height: 25px;
+    width: 55px;
+    border-radius: 12px;
+    color: #FFFF;
+    background-color: #0080CD;
+    border: solid 1px black;
+    margin-left: 1%;
+}
+
+.input button{
+    height: 25px;
+    width: 125px;
+    background-color: #0080CD;
+    color: #FFFF;
+    cursor: pointer;
+    border-radius: 20px;
+    border: solid 1px black;
+    font-size: 14px;
+    font-weight: 510;
+    margin-left: 7%;
+}
+
+.input button:hover{
+    color: #d9d9d9;
+}
+
+/* Main */
+
+.main{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-tempo{
+    max-height: 650px;
+    height: 550px;
+    width: 650px;
+    border-radius: 40px;  
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 20px;
+}
+
+.sub-card{
+    height: 60%;
+    width: 100%;
+    text-align: center;
+}
+.sub-card p{
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.icone-tempo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.icone-tempo p{
+    font-size: 8rem;
+    margin: 0;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+.icone-tempo img{
+    width: 150px;
+    height: 150px;
+}
+
+.tema{
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.tema p{
+    margin: 120px;
+    font-weight: 600;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+}
+
+.sub-card2{
+    width: 100%;
+    height: 35%;
+    margin-top: 3%;
+}
+
+.sub-card2 h3{
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.circulo-green{
+    background-color: #58EB41;
+    width: 10px;
+    height: 30px;
+    border: solid 0.1px #C3BBBB;
+    border-radius: 12px;
+    margin-left: 25px;
+}
+
+.circulo-red{
+    background-color: #EB4141;
+    width: 10px;
+    height: 30px;
+    border: solid 0.1px #C3BBBB;
+    border-radius: 12px;
+    margin-left: 25px;
+}
+
+.linha{
+    background-color: #C3BBBB;
+    width: 90%;
+    filter: blur(0.1rem);
+    height: 1px;
+    margin-left: 25px;
+}
+
+.vento{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    margin-left: 5px;
+}
+
+.vento p{
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin-left: 69%;
+}
+.umidade{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    margin-left: 5px;
+}
+
+.umidade p{
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin-left: 69%;
+}
+
+/* Rodapé */
+.footer{
+    margin-top: 50px;
+    width: 100vw;
+    height: 22vh;
+    background-color: #0080CD;
+    display: block;
+}
+
+.linha2{
+    background-color: #FFFF;
+    width: 100vw;
+    height: 2px;
+}
+
+.conteudo{
+    display: flex;
+    width: 100%;
+    height: 65%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo2{
+    width: 20px;
+    height: 20px;
+}
+.direitos img{
+    width: 25px;
+    height: 25px;
+}
+
+.direitos{
+    height: 34%;
+    color: #FFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+.img img{
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.img2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2 img{
+    width: 40px;
+    height: 40px;
+}
+
+.informacao {
+    color: #FFFF;
+    width: 300px;
+    height: 80%;
+    margin-right: 65%;
+}
+
+.informacao h1{
+    font-size: 1.2rem;  
+}
+
+.informacao p{
+    font-size: 1rem;  
+}
+
+.erro{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.alerta {
+    height: 50px;
+    width: 40%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.sucesso {
+    border-color: #87c940;
+    color: #FFF;
+    background-color: #a0d468;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+} 
+
+.error {
+    border-color: #e8273b;
+    color: #FFF;
+    background-color: #ed5565;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.linhas{
+    display: none;
+}
+
+.links-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .links a{
+        font-size: 1rem;
+        padding-left: 0vw;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        width: 100vw;
+    }
+    .header{
+        width: 100vw;
+    }
+
+    .main{
+        width: 100vw;
+    }
+
+    .footer{
+        width: 100vw;
+    }
+
+    .alerta {
+        height: 50px;
+        width: 60%;
+        border: 1px solid gray;
+        border-radius: 3px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    
+    .sucesso {
+        border-color: #87c940;
+        color: #FFF;
+        background-color: #a0d468;
+        letter-spacing: 1px;
+        font-size: 1rem;
+    } 
+    
+    .error {
+        border-color: #e8273b;
+        color: #FFF;
+        background-color: #ed5565;
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+
+    .links {
+        padding-left: 20vw;
+    } 
+
+    .links a{
+        font-size: 1rem;
+    }
+
+    .logo img{
+        width: 105px;
+        height: 95px;
+        margin-left: 20px;
+    }
+
+    .direitos {
+        font-size: 0.8rem;
+    }
+
+    .direitos img{
+        width: 18px;
+        height: 18px;
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img img{
+        width: 35px;
+        height: 35px;
+        color: white;
+    }
+    
+    .img2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img2 img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .informacao {
+        color: #FFFF;
+        width: 300px;
+        height: 80%;
+        margin-right: 40vw;
+    }
+    
+    .informacao h1{
+        font-size: 1rem;  
+    }
+    
+    .informacao p{
+        font-size: 0.8rem;  
+    }
+
+    .card-tempo{
+        max-height: 650px;
+        height: 530px;
+        width: 550px;
+        border-radius: 40px;  
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        margin-top: 20px;
+    }
+
+    .sub-card p{
+        font-weight: 900;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .icone-tempo p{
+        font-size: 6rem;
+        margin: 0;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    .icone-tempo img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .tema{
+        display: flex;
+        height: 25px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .tema p{
+        margin: 102px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    .umidade p{
+        font-size: 0.9rem;
+        font-weight: bolder;
+        margin-left: 65%;
+    }
+
+    .vento p{
+        font-size: 0.9rem;
+        font-weight: bolder;
+        margin-left: 65%;
+    }
+
+    .input p{
+        font-size: 1rem;
+        margin-left: 12px;
+    }
+    
+    .input input{
+        margin-left: 10px;
+    }
+    
+    ::-webkit-input-placeholder {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 510;
+     }
+    
+    .input button{
+        font-size: 0.8rem;
+        font-weight: 510;
+        margin-right: 2%;
+    } 
+    
+    .links-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .logo img{
+        width: 90px;
+        height: 80px;
+        margin-left: 15px;
+    }
+
+    .links {
+        display: none;
+    }
+    
+    .links-mobile{
+        width: 100vw;
+        height: 12vh;
+        background-color: #0080CD;
+        align-items: center;
+        display: none;
+        flex-direction: column;
+    }
+
+    .links-mobile a{
+        font-size: 0.8rem;
+        margin: 5px;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .links-mobile a:hover{
+        color: #d9d9d9;
+        text-decoration: underline;
+        text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .links a{
+        font-size: 0.1rem;
+    }
+
+    .linhas{
+        display: block;
+        margin-right: 8%;
+        cursor: pointer;
+    }
+
+    .linhas img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .main{
+        height: 80vh;
+    }
+    .card-tempo{
+        width: 400px;
+        height: 420px;
+        margin-top: 0;
+    }
+
+    .sub-card p{
+        font-weight: 900;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .icone-tempo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .icone-tempo p{
+       font-size: 4rem; 
+    }
+
+    .icone-tempo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .tema{
+        display: flex;
+        height: 25px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .tema p{
+        margin: 65px;
+        font-size: 0.9rem;
+    }
+
+    .sub-card2{
+        margin-top: 0%;
+    }
+    .sub-card2 h3{
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    .circulo-green{
+        width: 7px;
+    }
+
+    .circulo-red{
+        width: 7px;
+    }
+    .vento p{
+        font-size: 0.8rem;
+        margin-left: 60%;
+    }
+
+    .umidade p{
+        font-size: 0.8rem;
+        margin-left: 60%;
+    }
+
+    .direitos {
+        font-size: 0.6rem;
+    }
+
+    .direitos img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .informacao {
+        color: #FFFF;
+        width: 300px;
+        height: 80%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    .informacao h1{
+        font-size: 0.8rem;  
+    }
+    
+    .informacao p{
+        font-size: 0.6rem;  
+    }
+
+    .img{
+        margin-right: 3px;
+    }
+
+    .img img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .img2 img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .img2{
+        margin-right: 5px;
+    }
+
+    .erro{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .alerta {
+        height: 30px;
+        width: 70%;
+        border: 1px solid gray;
+        border-radius: 3px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .sucesso {
+        border-color: #87c940;
+        color: #FFF;
+        background-color: #a0d468;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+    } 
+
+    .error {
+        border-color: #e8273b;
+        color: #FFF;
+        background-color: #ed5565;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+    }
+
+    .pesquisa{
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input form{
+        width: 100%;
+        height: 100%;
+    }
+
+    .input input{
+        margin-left: 5px;
+    }
+
+    .input select{
+        margin-left: 5px;
+    }
+
+    .input p{
+        font-size: 0.7rem;
+        margin-left: 5px;
+    }
+
+    .input button{
+        margin-left: 10px;
+    }
+
+    .icone-tempo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .alerta {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .card-tempo{
+        width: 355px;
+    }
+
+    .vento p{
+        margin-left: 55%;
+    }
+
+    .umidade p{
+        margin-left: 55%;
+    }
+
+    .tema p{
+        font-size: 0.7rem;
+        margin: 50px;
+    }
+
+    .pesquisa{
+        height: 200px;
+    }
+
+    .input form{
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .input input{
+        margin-top: -10px;
+        width: 190px;
+        height: 20px;
+        outline: 0;
+        background-color: #0080CD;
+    }
+
+    .input p{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .input select{
+        margin-top: -10px;
+        width: 200px;
+        padding-left: 5px;
+    }
+
+    .input button{
+        margin-top: 30px;
+        width: 200px;
+    }
+
+    .icone-tempo img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .alerta {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .tema p{
+        font-size: 0.7rem;
+        margin: 45px;
+    }
+
+    .card-tempo{
+        width: 300px;
+    }
+
+    .sub-card2 h3{
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+    
+    .vento p{
+        font-size: 0.7rem;
+        margin-left: 50%;
+    }
+
+    .umidade p{
+        font-size: 0.7rem;
+        margin-left: 50%;
+    }
+
+    .direitos p{
+        font-size: 0.5rem;
+    }
+
+    .linha{
+        background-color: #C3BBBB;
+        width: 86%;
+        filter: blur(0.1rem);
+        height: 1px;
+        margin-left: 25px;
+    }
+
+    .icone-tempo img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .alerta {
+        font-size: 0.6rem;
+    }
+}
